@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Michroma;
+    src: url(../assets/fonts/Michroma-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Michroma;
+}
+
+/* PARA DEBUG BORRAR */
+body {
+    background-color: red;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, p {
+    padding: 0px 0px 10px 20px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #42C2FF;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid black;
+}
+
+header a{
+    color: #EFFFFD;
+}
+
+main {
+    background-color: #B8FFF9;
+    width: 100%;
+    height: 70vh;
+}
+
+footer {
+    background-color: #42C2FF;
+    width: 100%;
+    height: 15vh;
+    border-top: 1px solid black;
+}
+
+footer a{
+    color: #EFFFFD;
+}
+
+.cabecera{
+    display: flex;
+    width: 100%;
+}
+
+.cabecera__logo img {    
+    width: 10%;
+    height: 80%;
+    object-fit: cover;
+    border: 2px solid #e8dd0f;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.cabecera__nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 45px;
+}
+
+.principal__galeria {
+    background-image: url(../assets/img/messi-fondo.jpg);
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 100%;
+}
+
+.principal__galeria img {
+    width: 100%;
+    height: 50%;
+    padding: 0px 0px 0px 20px;
+    object-fit: scale-down;
+
+}
+
+.principal__contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.principal__contenedor__contacto{
+    display: flex;
+    padding: 0px 0px 0px 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.principal__contenedor iframe {
+    padding: 0px 0px 0px 20px;
+}
+
+.mapa {
+    padding: 5px;
+    width: 450px;
+    height: 50%;
+}
+
+.piePagina {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+textarea {
+    resize: none;
+}
+
+.principal__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.principal__contacto__contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.principal__contacto__contenido input {
+    width: 338px;
+}
+
+.principal__contacto__btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #42C2FF;
+    color: #EFFFFD;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #85F4FF;
+}
+
