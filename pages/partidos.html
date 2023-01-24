@@ -1,82 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Archivo con estilos para el sitio -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <title>MUNDIAL 2022 - Partidos</title>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <nav class="cabecera">
-            <section class="cabecera__logo">
-                <a href="../index.html">
-                    <img src="../assets/img/copa.jpg" alt="Copa del Mundo" title="Pagina de Inicio">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom border-2 border-info-subtle">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img class="rounded-5 border border-4 border-info-subtle" src="../assets/img/copa.jpg"
+                        alt="Copa del Mundo" title="Pagina de Inicio">
                 </a>
-            </section>
 
-            <section class="cabecera__nav">
-                <ul>
-                    <li>
-                        <a href="./partidos.html">Partidos</a>
-                    </li>
-                    <li>
-                        <a href="./jugadores.html">Jugadores</a>
-                    </li>
-                    <li>
-                        <a href="./estadios.html">Estadios</a>
-                    </li>
-                    <li>
-                        <a href="./goles.html">Goles</a>
-                    </li>
-                </ul>
-            </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navBar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./partidos.html">Partidos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./estadios.html">Estadios</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./goles.html">Goles</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Buscar">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="principal">
-        <section class="principal__galeria">
-            <h1>Argentina vs Francia</h1>
-            <h2>La mejor Final</h2>
-            <p>En lo que muchos dicen la mejor final de la historia, se impuso por penales luego de dominar por 80 minutos</p>
-            <div class="principal__contenedor">
-                <img src="../assets/img/7.argentina-vs-francia.jpg" alt="Argentina vs Francia">
-            </div>
-        </section>
+    <!-- MAIN -->
+    <main>
+        <div class="container-fluid pt-5">
+            <div class="row pt-5">
+                <div class="col-md-9">
+                    <section>
+                        <div class="card pt-3 pb-3">
 
+                            <div class="card-body">
+                                <h1 class="card-title">Argentina vs Francia</h1>
+                                <p class="card-text">En lo que muchos dicen la mejor final de la historia, se impuso por
+                                    penales luego de dominar por 80
+                                    minutos</p>
+                            </div>
+
+                            <img class="card-img-bottom img-thumbnail" src="../assets/img/7.argentina-vs-francia.jpg"
+                                alt="Argentina vs Francia">
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="col-md-3">
+                    <aside>
+                        <h2>Argentina</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, illum alias distinctio omnis
+                            quibusdam doloremque, perspiciatis tempore nostrum, inventore accusantium sed. Animi, ut
+                            quas. Obcaecati omnis facere eius laudantium neque?</p>
+                    </aside>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <nav class="piePagina">
-            <section class="piePagina__nav">
-                <h3>Redes</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com">Twitter</a>
-                    </li>
-                </ul>
-            </section>
-            
-            <section class="piePagina__contacto">
-                <h3>Contacto</h3>
-                <a href="./contacto.html">Dejanos un mensaje</a>
-            </section>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-top border-2 border-info-subtle">
+            <div class="container-fluid align-items-start">
+                <div class="d-flex flex-column">
+                    <h6 class="text-light">Redes</h6>
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.twitter.com">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column align-items-end">
+                    <h6 class="text-light justify-content-start">Contacto</h6>
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Dejanos un mensaje</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
 
     </footer>
-    
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

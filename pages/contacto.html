@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Archivo con estilos para el sitio -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <title>MUNDIAL 2022 - Contacto</title>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <nav class="cabecera">
-            <section class="cabecera__logo">
-                <a href="../index.html">
-                    <img src="../assets/img/copa.jpg" alt="Copa del Mundo" title="Pagina de Inicio">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom border-2 border-info-subtle">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img class="rounded-5 border border-4 border-info-subtle" src="../assets/img/copa.jpg"
+                        alt="Copa del Mundo" title="Pagina de Inicio">
                 </a>
-            </section>
 
-            <section class="cabecera__nav">
-                <ul>
-                    <li>
-                        <a href="./partidos.html">Partidos</a>
-                    </li>
-                    <li>
-                        <a href="./jugadores.html">Jugadores</a>
-                    </li>
-                    <li>
-                        <a href="./estadios.html">Estadios</a>
-                    </li>
-                    <li>
-                        <a href="./goles.html">Goles</a>
-                    </li>
-                </ul>
-            </section>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navBar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./partidos.html">Partidos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./estadios.html">Estadios</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./goles.html">Goles</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Buscar">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -46,12 +61,12 @@
             <h1>Dejanos un mensaje</h1>
             <div class="principal__contenedor__contacto">
                 <form class="principal__contacto" action="">
-                    
+
                     <div class="principal__contacto__contenido">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
                     </div>
-                        
+
                     <div class="principal__contacto__contenido">
                         <label for="apellido">Apellido</label>
                         <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
@@ -69,7 +84,8 @@
 
                     <div class="principal__contacto__contenido">
                         <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Dejenos su mensaje..."></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5"
+                            placeholder="Dejenos su mensaje..."></textarea>
                     </div>
 
                     <div class="principal__contacto__btn">
@@ -82,30 +98,45 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <nav class="piePagina">
-            <section class="piePagina__nav">
-                <h3>Redes</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com">Twitter</a>
-                    </li>
-                </ul>
-            </section>
-            
-            <section class="piePagina__contacto">
-                <h3>Contacto</h3>
-                <a href="./contacto.html">Dejanos un mensaje</a>
-            </section>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-top border-2 border-info-subtle">
+            <div class="container-fluid align-items-start">
+                <div class="d-flex flex-column">
+                    <h6 class="text-light">Redes</h6>
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com">Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.twitter.com">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column align-items-end">
+                    <h6 class="text-light justify-content-start">Contacto</h6>
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Dejanos un mensaje</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
 
     </footer>
-    
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
