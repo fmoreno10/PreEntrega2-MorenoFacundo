@@ -56,46 +56,41 @@
         </nav>
     </header>
 
-    <main class="principal">
-        <section class="principal__galeria">
-            <h1>Dejanos un mensaje</h1>
-            <div class="principal__contenedor__contacto">
-                <form class="principal__contacto" action="">
+    <!-- MAIN -->
+    <main>
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="col-md">
+                    <section>
+                        <h1>Dejanos un mensaje</h1>
 
-                    <div class="principal__contacto__contenido">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
-                    </div>
+                        <form action="">
 
-                    <div class="principal__contacto__contenido">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
-                    </div>
+                            <label class="form-label" for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Nombre">
 
-                    <div class="principal__contacto__contenido">
-                        <label for="telefono">Telefono</label>
-                        <input type="text" id="telefono" name="telefono" placeholder="Ingrese su Telefono">
-                    </div>
+                            <label class="form-label" for="apellido">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" placeholder="Ingrese su Apellido">
 
-                    <div class="principal__contacto__contenido">
-                        <label for="mail">E-mail</label>
-                        <input type="text" id="mail" name="mail" placeholder="Ingrese su E-mail">
-                    </div>
+                            <label class="form-label" for="telefono">Telefono</label>
+                            <input type="text" class="form-control" name="telefono" placeholder="Ingrese su Telefono">
 
-                    <div class="principal__contacto__contenido">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="5"
-                            placeholder="Dejenos su mensaje..."></textarea>
-                    </div>
+                            <label class="form-label" for="mail">E-mail</label>
+                            <input type="text" class="form-control" name="mail" placeholder="Ingrese su E-mail">
 
-                    <div class="principal__contacto__btn">
-                        <button type="submit" class="btn">Enviar</button>
-                    </div>
+                            <label class="form-label" for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" class="form-control" cols="30" rows="5"
+                                placeholder="Dejenos su mensaje..."></textarea>
 
-                </form>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+
+                        </form>
+
+                    </section>
+
+                </div>
             </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- FOOTER -->
