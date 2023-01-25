@@ -11,6 +11,35 @@
 .container-fluid a img {
     width: auto;
     height: 90px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.container-fluid a img:hover {
+    animation-name: copa;
+    animation-timing-function: linear;
+}
+
+@keyframes copa {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg)
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 
 .nav-link::after{
@@ -24,4 +53,12 @@
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.card{
+    transition: box-shadow .3s;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px #1d1b1b33; 
 }
