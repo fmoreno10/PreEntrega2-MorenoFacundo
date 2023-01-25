@@ -55,10 +55,35 @@
     width: 100%;
 }
 
-.card{
+.partidos .card{
     transition: box-shadow .3s;
 }
 
-.card:hover{
-    box-shadow: 0 0 20px #1d1b1b33; 
+.partidos .card:hover{
+    box-shadow: 0 0 20px #03f9f1fa; 
+}
+
+.nav-link{
+    transition: all 0.3s;
+}
+
+.nav-link:hover{
+    transform: translate(1px,1px);
+}
+
+.jugadores .card{
+    transition: transform .3s;
+}
+
+.jugadores .card:hover{
+    transform: scale(1.03,1.03); 
+}
+
+.estadios .card img{
+    transition: opacity .3s;
+    opacity: 0.5;
+}
+
+.estadios .card img:hover{
+    opacity: 1.0;
 }
