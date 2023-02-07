@@ -1,0 +1,24 @@
+// Importo los partials
+@import './base/reset';
+@import './base/vars';
+@import './base/mixin';
+@import './base/extend';
+
+// Importo los componentes
+@import './components/animation';
+@import './components/font';
+@import './components/header';
+@import './components/footer';
+@import './components/main';
+
+// Importo los layouts
+@import './layout/index';
+@import './layout/contacto';
+@import './layout/estadios';
+@import './layout/goles';
+@import './layout/jugadores';
+@import './layout/partidos';
+
+
+
+

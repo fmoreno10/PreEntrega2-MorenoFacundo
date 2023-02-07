@@ -1,0 +1,5 @@
+@each $redSocial,$color in $redes {
+    .fa-#{$redSocial} {
+        color: $color;
+    }
+}

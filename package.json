@@ -1,0 +1,22 @@
+{
+  "name": "preentrega3-morenofacundo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmoreno10/PreEntrega2-MorenoFacundo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmoreno10/PreEntrega2-MorenoFacundo/issues"
+  },
+  "homepage": "https://github.com/fmoreno10/PreEntrega2-MorenoFacundo#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+.partidos .card {
+    transition: all .3s;
+
+    &:hover {
+        @include cardsEffect;
+    }
+
+    img{
+        @include adjustImg(40vh);
+    }
+}

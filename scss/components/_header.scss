@@ -1,0 +1,39 @@
+/* COPA - LOGO */
+.container-fluid a {
+    img {
+        width: auto;
+        height: 90px;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        &:hover {
+            animation-name: copa;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+
+.nav-link {
+
+    transition: all 0.3s;
+
+    // Movimiento de los links
+    &:hover {
+        transform: translate(1px, 1px);
+    }
+
+    // Subrayado de los links
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: $link-color;
+        transition: width .3s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}

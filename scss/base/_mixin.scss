@@ -1,0 +1,12 @@
+// Mixin para ajustar el tamaño de las imagenes en los cards
+@mixin adjustImg ($height) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+}
+
+// Efecto aplicado en el hover de los cards
+@mixin cardsEffect {
+    box-shadow: 0 0 20px $card-color;
+    transform: scale(1.03, 1.03);
+}

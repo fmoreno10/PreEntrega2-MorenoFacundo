@@ -20,11 +20,11 @@
 
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top border-bottom border-2 border-info-subtle">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top border-bottom border-2 border-info-subtle">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="../index.html">
-                    <img class="rounded-5 border border-4 border-info-subtle" src="../assets/img/copa.jpg"
+                    <img class="rounded-5 border border-4 border-info-subtle img-fluid" src="../assets/img/copa.jpg"
                         alt="Copa del Mundo" title="Pagina de Inicio">
                 </a>
 
@@ -60,107 +60,119 @@
     <main>
         <section class="partidos">
             <div class="container-fluid pt-5">
-                <div class="row pt-5 m-5">
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3">
+                <!-- UNA FILA CON VARIAS COLUMNAS RESPONSIVE, CANTIDAD DE COLUMNAS DEPENDIENDO DEL DISPOSITIVO-->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5 p-3">
 
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Arabia</h1>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
+
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Arabia</h2>
                                 <p class="card-text">Argentina no comenzo bien el mundial, perdiendo su invicto y por
                                     primera vez ante una seleccion asiatica</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/1.argentina-vs-arabia.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/1.argentina-vs-arabia.jpg"
                                 alt="Argentina vs Arabia">
+                            <a href="https://www.espn.com.ar/futbol/partido/_/juegoId/633794" target="_blank"
+                                class="btnPartidos my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3">
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
 
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Mexico</h1>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Mexico</h2>
                                 <p class="card-text">Luego de un partido muy trabado Messi abrio el marcador con un
                                     golazo de afuera del area</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/2.argentina-vs-mexico.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/2.argentina-vs-mexico.jpg"
                                 alt="Argentina vs Mexico">
+                            <a href="https://www.espn.com.ar/futbol/partido/_/juegoId/633807" target="_blank"
+                                class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3">
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
 
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Polonia</h1>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Polonia</h2>
                                 <p class="card-text">Argentina logro la clasificacion a octavos con un gol del pampeano
                                     Alexis Mac Allister </p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/3.argentina-vs-polonia.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/3.argentina-vs-polonia.jpg"
                                 alt="Argentina vs Polonia">
+                            <a href="https://www.espn.com.ar/futbol/partido/_/juegoId/633824" target="_blank"
+                                class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                </div>
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
 
-                <div class="row pt-5 m-5">
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3">
-
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Australia</h1>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Australia</h2>
                                 <p class="card-text">En los octavos se enfrento a una dura seleccion australiana que
                                     casi logra el empate</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/4.argentina-vs-australia.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/4.argentina-vs-australia.jpg"
                                 alt="Argentina vs Australia">
+                            <a href="https://www.espn.com.ar/futbol/partido/_/juegoId/633836" target="_blank"
+                                class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3 overflow-hidden">
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
 
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Holanda</h1>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Holanda</h2>
                                 <p class="card-text">Luego de que le empaten agonicamente al final, pudo superar a
                                     Holanda en los penales, en otra gran actuacion del Dibu</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/5.argentina-vs-holanda.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/5.argentina-vs-holanda.jpg"
                                 alt="Argentina vs Holanda">
+                            <a href="https://www.espn.com.ar/futbol/partido/_/juegoId/633844" target="_blank"
+                                class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4">
-                        <div class="card pt-3 pb-3">
+                    <div class="col d-flex align-items-stretch">
+                        <div class="card">
 
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Croacia</h1>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Croacia</h2>
                                 <p class="card-text">Con otra gran actuación de Julian Alvarez, y un gol a lo Kempes,
                                     supero claramente en semis para volver a una nueva final</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/6.argentina-vs-croacia.jpg"
+                            <img class="card-img-bottom img-fluid" src="../assets/img/6.argentina-vs-croacia.jpg"
                                 alt="Argentina vs Croacia">
+                            <a href="https://www.fifa.com/fifaplus/es/match-centre/match/17/255711/285075/400128143?competitionEntryId=17"
+                                target="_blank" class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
 
-                </div>
+                    <div class="col w-100">
+                        <div class="card">
 
-                <div class="row pt-5 m-5">
-                    <div class="col-sm">
-                        <div class="card pt-3 pb-3">
-
-                            <div class="card-body text-center">
-                                <h1 class="card-title">Argentina vs Francia</h1>
-                                <p class="card-text">En un partido dominado claramente por Argentina, Francia logra el empate cerca del final. Y nuevamente aparecio el Dibu en los penales para darnos la 3era copa del Mundo!!</p>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h2 class="card-title">Argentina vs Francia</h2>
+                                <p class="card-text">En un partido dominado claramente por Argentina, Francia logra el
+                                    empate cerca del final. Y nuevamente aparecio el Dibu en los penales para darnos la
+                                    3era copa del Mundo!!</p>
                             </div>
 
-                            <img class="card-img-bottom" src="../assets/img/7.argentina-vs-francia.jpg"
-                                alt="Argentina vs Francia">
+                            <img class="card-img-bottom h-100 w-auto img-fluid"
+                                src="../assets/img/7.argentina-vs-francia.jpg" alt="Argentina vs Francia">
+                            <a href="https://www.fifa.com/fifaplus/es/match-centre/match/17/255711/285077/400128145?competitionEntryId=17"
+                                target="_blank" class="btn btn-primary my-2 align-self-center">Resumen</a>
                         </div>
                     </div>
                 </div>
@@ -174,22 +186,22 @@
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-top border-2 border-info-subtle">
             <div class="container-fluid align-items-start">
                 <div class="d-flex flex-column">
-                    <h6 class="text-light">Redes</h6>
+                    <h3 class="text-light">Redes</h3>
                     <ul class="navbar-nav d-flex flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com">Facebook</a>
+                            <a class="nav-link" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com">Instagram</a>
+                            <a class="nav-link" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.twitter.com">Twitter</a>
+                            <a class="nav-link" href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i> Twitter</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="d-flex flex-column align-items-end">
-                    <h6 class="text-light justify-content-start">Contacto</h6>
+                    <h3 class="text-light justify-content-start">Contacto</h3>
                     <ul class="navbar-nav d-flex flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Dejanos un mensaje</a>
@@ -202,6 +214,9 @@
 
     </footer>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2ccba49650.js" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
