@@ -12,7 +12,7 @@
     <meta name="keywords"
         content="Argentina, campeon, futbol, mundial, copa, mundo, messi, qatar, 2022, final, di maria, dimaria, dibu, fifa, estadios, lusail, khalifa">
 
-            <!-- favicon -->
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -20,7 +20,7 @@
     <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- Archivo con estilos para el sitio -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -35,12 +35,12 @@
 
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top border-bottom border-2 border-info-subtle">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="../index.html">
-                    <img class="rounded-5 border border-4 border-info-subtle img-fluid" src="../assets/img/copa.jpg"
-                        alt="Copa del Mundo" title="Pagina de Inicio">
+                    <img class="rounded-5 img-fluid" src="../assets/img/copa.jpg" alt="Copa del Mundo"
+                        title="Pagina de Inicio">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
@@ -64,7 +64,7 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="text" placeholder="Buscar">
-                        <button class="btn btn-primary" type="button">Buscar</button>
+                        <button class="btnForm" type="button">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -75,9 +75,11 @@
     <main>
         <section class="estadios">
             <div class="container-fluid pt-5">
-                <div class="row pt-5 m-5">
-                    <div class="col-sm-6">
-                        <div class="card pt-3 pb-3">
+                <!-- <div class="row pt-5 m-5"> -->
+                <!-- UNA FILA CON VARIAS COLUMNAS RESPONSIVE, CANTIDAD DE COLUMNAS DEPENDIENDO DEL DISPOSITIVO-->
+                <div class="row row-cols-1 row-cols-md-2 g-4 mt-5 p-3">
+                    <div class="col">
+                        <div class="card rounded-5 rounded-bottom-0 pt-3 pb-3">
 
                             <div class="card-body text-center">
                                 <h2 class="card-title">Lusail</h2>
@@ -88,8 +90,9 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <div class="card align-items-end justify-content-end">
+                    <div class="col align-self-center">
+
+                        <div class="card">
 
                             <div class="ratio ratio-16x9">
                                 <iframe
@@ -100,11 +103,8 @@
                         </div>
                     </div>
 
-                </div>
-
-                <div class="row pt-5 m-5">
-                    <div class="col-sm-6">
-                        <div class="card pt-3 pb-3">
+                    <div class="col">
+                        <div class="card rounded-5 rounded-bottom-0 pt-3 pb-3">
 
                             <div class="card-body text-center">
                                 <h2 class="card-title">Khalifa</h2>
@@ -115,8 +115,8 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <div class="card pt-3 pb-3 h-100 align-items-center justify-content-center">
+                    <div class="col align-self-center">
+                        <div class="card">
 
                             <div class="ratio ratio-16x9">
                                 <iframe
@@ -137,7 +137,7 @@
     <!-- FOOTER -->
     <footer>
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark border-top border-2 border-info-subtle">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid align-items-start">
                 <div class="d-flex flex-column">
                     <h3 class="text-light">Redes</h3>

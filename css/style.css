@@ -2,35 +2,53 @@
   font-family: Michroma;
   src: url(../assets/fonts/Michroma-Regular.ttf); }
 
+@font-face {
+  font-family: BlackOpsOne;
+  src: url(../assets/fonts/BlackOpsOne-Regular.ttf); }
+
+@font-face {
+  font-family: Telex;
+  src: url(../assets/fonts/Telex-Regular.ttf); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.btnCommon, .btnPartidos, .btnJugadores {
-  border: 1px Solid #13bae3;
+.btnCommon, .btnPartidos, .btnJugadores, .btnForm {
+  border: 1px Solid #FFCA03;
   border-radius: 20px;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 2px 2px 5px #13bae3;
-  width: 100%;
-  box-shadow: 2px 2px black;
-  margin: 5px 0 5px 0;
-  opacity: 0.5;
+  text-shadow: 2px 2px 10px #CDFCF6;
+  width: 90%;
+  box-shadow: 2px 2px #1A1C20;
+  margin: 5px;
+  opacity: 0.7;
   transition: 0.3s; }
-  .btnCommon:hover, .btnPartidos:hover, .btnJugadores:hover {
-    background-color: black;
+  .btnCommon:hover, .btnPartidos:hover, .btnJugadores:hover, .btnForm:hover {
+    background-color: #FFEFA0;
     opacity: 1; }
 
 .btnPartidos {
-  background-color: blue;
-  color: white; }
+  background-color: #EBA83A;
+  color: #1B1A17;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 .btnJugadores {
-  background-color: black;
-  color: white; }
+  background-color: #E6B325;
+  color: #1B1A17;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.btnForm {
+  background-color: #D4AC2B;
+  color: #1B1A17;
+  box-shadow: 2px 2px #CDFCF6;
+  border: 1px Solid #CDFCF6; }
 
 @keyframes copa {
   0% {
@@ -47,6 +65,9 @@
 * {
   font-family: Michroma; }
 
+p {
+  font-family: Telex; }
+
 /* COPA - LOGO */
 .container-fluid a img {
   width: auto;
@@ -57,6 +78,11 @@
     animation-name: copa;
     animation-timing-function: linear; }
 
+header nav {
+  border-bottom: 2px Solid #FFCA03; }
+  header nav a img {
+    border: 3px Solid #FFCA03; }
+
 .nav-link {
   transition: all 0.3s; }
   .nav-link:hover {
@@ -66,10 +92,16 @@
     display: block;
     width: 0;
     height: 1px;
-    background: #13bae3;
+    background: #FFCA03;
     transition: width .3s; }
   .nav-link:hover::after {
     width: 100%; }
+
+footer nav {
+  border-top: 2px Solid #FFCA03; }
+
+footer h3 {
+  font-family: BlackOpsOne; }
 
 .fa-facebook {
   color: #0165E1; }
@@ -81,7 +113,10 @@
   color: #00acee; }
 
 main {
-  background-image: radial-gradient(circle, #ECF9FF, #CDFCF6); }
+  background-image: radial-gradient(circle, #CDFCF6, #ECF9FF); }
+
+form textarea {
+  resize: none; }
 
 .estadios .card img {
   transition: opacity .3s;
@@ -92,7 +127,7 @@ main {
 .jugadores .card {
   transition: all .3s; }
   .jugadores .card:hover {
-    box-shadow: 0 0 20px #DD5353;
+    box-shadow: 0 0 20px #FFEFA0;
     transform: scale(1.03, 1.03); }
   .jugadores .card img {
     width: 100%;
@@ -102,7 +137,7 @@ main {
 .partidos .card {
   transition: all .3s; }
   .partidos .card:hover {
-    box-shadow: 0 0 20px #DD5353;
+    box-shadow: 0 0 20px #FFEFA0;
     transform: scale(1.03, 1.03); }
   .partidos .card img {
     width: 100%;

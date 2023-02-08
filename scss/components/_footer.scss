@@ -1,4 +1,15 @@
-@each $redSocial,$color in $redes {
+footer {
+    nav {
+        border-top: 2px Solid $link_color;
+    }
+
+    h3{        
+        font-family: $font_Header_footer;
+    }
+}
+
+@each $redSocial,
+$color in $redes {
     .fa-#{$redSocial} {
         color: $color;
     }

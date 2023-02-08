@@ -1,14 +1,26 @@
 // Colores
 
-$card_color: #DD5353;
+$card_color:  #FFEFA0;
+//#93C6E7;
+//#FFCA03;
+//#FAC213; 
+//#FF597B;
 //#03f9f1fa;
-$link_color: #13bae3;
+$link_color: #FFCA03;
+// #13bae3;
 $facebook_color: #0165E1;
 $instagram_color: #e95950;
 $twitter_color: #00acee;
 $background_color1: #ECF9FF;
 $background_color2: #CDFCF6;
 
+$btnJugadores_color: #E6B325;
+$btnPartidos_color: #EBA83A;
+$btnForm_color: #D4AC2B;
+
+$btnFont_color: #1B1A17;
+
+$btnShadow_color: #1A1C20;
 
 $redes: (
     facebook: $facebook_color,
@@ -16,5 +28,9 @@ $redes: (
     twitter: $twitter_color
 );
 
-// Fuente
+// Fuentes
 $font-main: Michroma;
+
+$font_Header_footer: BlackOpsOne;
+
+$font_Paragraph: Telex;

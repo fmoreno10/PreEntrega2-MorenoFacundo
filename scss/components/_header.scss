@@ -13,6 +13,17 @@
     }
 }
 
+header {
+    nav {
+        border-bottom: 2px Solid $link_color;
+
+        a{
+            img{
+                border: 3px Solid $link_color;
+            }
+        }
+    }
+}
 
 .nav-link {
 
