@@ -19,3 +19,30 @@
         transform: rotateZ(360deg);
     }
 }
+
+@keyframes aparecerDeIzquierda{
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerDeDerecha{
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }   
+}
+
+.animacionIzquierda{
+    animation: 1s ease-in-out 0.8s 1 aparecerDeIzquierda;
+}
+
+
+.animacionDerecha{
+    animation: 1s ease-in-out 0.8s 1 aparecerDeDerecha;
+}
