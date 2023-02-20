@@ -38,6 +38,24 @@
     }   
 }
 
+@keyframes aparecerDeArriba{
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecerDeAbajo{
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0);
+    }   
+}
+
 .animacionIzquierda{
     animation: 1s ease-in-out 0.8s 1 aparecerDeIzquierda;
 }
@@ -45,4 +63,13 @@
 
 .animacionDerecha{
     animation: 1s ease-in-out 0.8s 1 aparecerDeDerecha;
+}
+
+.animacionArriba{
+    animation: 1s ease-in-out 0.8s 1 aparecerDeArriba;
+}
+
+
+.animacionAbajo{
+    animation: 1s ease-in-out 0.8s 1 aparecerDeAbajo;
 }

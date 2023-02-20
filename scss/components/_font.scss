@@ -1,8 +1,22 @@
+/* ESTABLEZCO FONT SIZE CON VW PARA QUE SEA RESPONSIVE */
 * {
-    font-family: $font-main; 
+    font-family: $font-main;
+    font-size: 1vw;
 }
 
 p {
-    font-family: $font_Paragraph; 
+    font-family: $font_Paragraph;
+    font-size: 1vw;
 }
 
+h1 {
+    font-size: 8vw;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+h3 {
+    font-size: 4vw;
+}

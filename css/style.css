@@ -54,6 +54,33 @@
   border-bottom-right-radius: 3px;
   width: max-content; }
 
+.parallax, .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax1 {
+  background-image: url(../../assets/img/argentina1.jpg);
+  min-height: 85vh; }
+
+.parallax2 {
+  background-image: url(../../assets/img/messi2.jpg);
+  min-height: 70vh; }
+
+.parallax3 {
+  background-image: url(../../assets/img/argentina2.jpg);
+  min-height: 70vh; }
+
+.parallax4 {
+  background-image: url(../../assets/img/messi3.jpg);
+  min-height: 70vh; }
+
+.parallax5 {
+  background-image: url(../../assets/img/dibu.jpg);
+  min-height: 70vh; }
+
 @keyframes copa {
   0% {
     transform: rotateZ(0deg); }
@@ -78,17 +105,47 @@
   100% {
     transform: translateX(0); } }
 
+@keyframes aparecerDeArriba {
+  0% {
+    transform: translateY(-200%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes aparecerDeAbajo {
+  0% {
+    transform: translateY(200%); }
+  100% {
+    transform: translateY(0); } }
+
 .animacionIzquierda {
   animation: 1s ease-in-out 0.8s 1 aparecerDeIzquierda; }
 
 .animacionDerecha {
   animation: 1s ease-in-out 0.8s 1 aparecerDeDerecha; }
 
+.animacionArriba {
+  animation: 1s ease-in-out 0.8s 1 aparecerDeArriba; }
+
+.animacionAbajo {
+  animation: 1s ease-in-out 0.8s 1 aparecerDeAbajo; }
+
+/* ESTABLEZCO FONT SIZE CON VW PARA QUE SEA RESPONSIVE */
 * {
-  font-family: Michroma; }
+  font-family: Michroma;
+  font-size: 1vw; }
 
 p {
-  font-family: Telex; }
+  font-family: Telex;
+  font-size: 1vw; }
+
+h1 {
+  font-size: 8vw; }
+
+h2 {
+  font-size: 6vw; }
+
+h3 {
+  font-size: 4vw; }
 
 /* COPA - LOGO */
 .container-fluid a img {
@@ -112,12 +169,27 @@ header nav {
   .nav-link::after {
     content: '';
     display: block;
-    width: 0;
     height: 1px;
+    width: 100%;
     background: #FFCA03;
-    transition: width .3s; }
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out; }
   .nav-link:hover::after {
-    width: 100%; }
+    transform-origin: left;
+    transform: scaleX(1); }
+  .nav-link::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #FFCA03;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out; }
+  .nav-link:hover::before {
+    transform-origin: right;
+    transform: scaleX(1); }
 
 footer nav {
   border-top: 2px Solid #FFCA03; }
@@ -150,51 +222,6 @@ main {
   margin: 1.5rem;
   padding: 1.5rem;
   box-shadow: 0.2rem 0.2rem 0.5rem #FFEFA0, inset 0.2rem 0.2rem 0.5rem #FFEFA0; }
-
-.parallax {
-  background-image: url(../../assets/img/argentina1.jpg);
-  min-height: 85vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallax2 {
-  background-image: url(../../assets/img/messi2.jpg);
-  min-height: 60vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallax3 {
-  background-image: url(../../assets/img/argentina2.jpg);
-  min-height: 60vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallax4 {
-  background-image: url(../../assets/img/messi3.jpg);
-  min-height: 60vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.parallax5 {
-  background-image: url(../../assets/img/messi4.jpg);
-  min-height: 60vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
 
 .hero__section {
   margin-top: 3vh; }

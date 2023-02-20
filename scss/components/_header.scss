@@ -17,8 +17,8 @@ header {
     nav {
         border-bottom: 2px Solid $link_color;
 
-        a{
-            img{
+        a {
+            img {
                 border: 3px Solid $link_color;
             }
         }
@@ -38,13 +38,33 @@ header {
     &::after {
         content: '';
         display: block;
-        width: 0;
         height: 1px;
+        width: 100%;
         background: $link-color;
-        transition: width .3s;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
     }
 
     &:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    // Linea arriba de los links
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
         width: 100%;
+        background: $link-color;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform-origin: right;
+        transform: scaleX(1);
     }
 }

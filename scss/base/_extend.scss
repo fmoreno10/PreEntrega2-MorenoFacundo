@@ -50,3 +50,41 @@
     width: max-content;
     
 }
+
+.parallax{
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1{
+    @extend .parallax;
+    background-image: url(../../assets/img/argentina1.jpg);
+    min-height: 85vh;
+}
+
+.parallax2{
+    @extend .parallax;
+    background-image: url(../../assets/img/messi2.jpg);
+    min-height: 70vh;
+}
+
+.parallax3{
+    @extend .parallax;
+    background-image: url(../../assets/img/argentina2.jpg);
+    min-height: 70vh;
+}
+
+.parallax4{
+    @extend .parallax;
+    background-image: url(../../assets/img/messi3.jpg);
+    min-height: 70vh;
+}
+
+.parallax5{
+    @extend .parallax;
+    background-image: url(../../assets/img/dibu.jpg);
+    min-height: 70vh;
+}
